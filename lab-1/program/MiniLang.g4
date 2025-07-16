@@ -7,7 +7,7 @@ stat:   expr NEWLINE                 # printExpr
     |   NEWLINE                      # blank
     ;
 
-expr:   expr ('*'|'/') expr          # MulDiv
+expr:   expr ('*') expr          # MulDiv
     |   expr ('+'|'-') expr          # AddSub
     |   INT                          # int
     |   ID                           # id
